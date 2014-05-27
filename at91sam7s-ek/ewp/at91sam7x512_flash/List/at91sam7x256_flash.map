@@ -1,0 +1,798 @@
+###############################################################################
+#                                                                             #
+# IAR ELF Linker V6.40.1.53790/W32 for ARM              25/Nov/2013  15:49:11 #
+# Copyright 2007-2012 IAR Systems AB.                                         #
+#                                                                             #
+#    Output file  =  F:\SVN Dir\PQ\iSAM Test Bench\Bridge_Audio_Dev\at91sam7s #
+#                    -ek\ewp\at91sam7x512_flash\Exe\at91sam7x256_flash.out    #
+#    Map file     =  F:\SVN Dir\PQ\iSAM Test Bench\Bridge_Audio_Dev\at91sam7s #
+#                    -ek\ewp\at91sam7x512_flash\List\at91sam7x256_flash.map   #
+#    Command line =  "F:\SVN Dir\PQ\iSAM Test Bench\Bridge_Audio_Dev\at91sam7 #
+#                    s-ek\ewp\at91sam7x512_flash\Obj\AUDDSpeakerChannel.o"    #
+#                    "F:\SVN Dir\PQ\iSAM Test Bench\Bridge_Audio_Dev\at91sam7 #
+#                    s-ek\ewp\at91sam7x512_flash\Obj\AUDDSpeakerDriver.o"     #
+#                    "F:\SVN Dir\PQ\iSAM Test Bench\Bridge_Audio_Dev\at91sam7 #
+#                    s-ek\ewp\at91sam7x512_flash\Obj\AUDDSpeakerDriverDescrip #
+#                    tors.o" "F:\SVN Dir\PQ\iSAM Test                         #
+#                    Bench\Bridge_Audio_Dev\at91sam7s-ek\ewp\at91sam7x512_fla #
+#                    sh\Obj\AUDFeatureUnitRequest.o" "F:\SVN Dir\PQ\iSAM      #
+#                    Test Bench\Bridge_Audio_Dev\at91sam7s-ek\ewp\at91sam7x51 #
+#                    2_flash\Obj\AUDGenericRequest.o" "F:\SVN Dir\PQ\iSAM     #
+#                    Test Bench\Bridge_Audio_Dev\at91sam7s-ek\ewp\at91sam7x51 #
+#                    2_flash\Obj\I2s.o" "F:\SVN Dir\PQ\iSAM Test              #
+#                    Bench\Bridge_Audio_Dev\at91sam7s-ek\ewp\at91sam7x512_fla #
+#                    sh\Obj\USBConfigurationDescriptor.o" "F:\SVN             #
+#                    Dir\PQ\iSAM Test Bench\Bridge_Audio_Dev\at91sam7s-ek\ewp #
+#                    \at91sam7x512_flash\Obj\USBDCallbacks_Initialized.o"     #
+#                    "F:\SVN Dir\PQ\iSAM Test Bench\Bridge_Audio_Dev\at91sam7 #
+#                    s-ek\ewp\at91sam7x512_flash\Obj\USBDCallbacks_Reset.o"   #
+#                    "F:\SVN Dir\PQ\iSAM Test Bench\Bridge_Audio_Dev\at91sam7 #
+#                    s-ek\ewp\at91sam7x512_flash\Obj\USBDCallbacks_Resumed.o" #
+#                     "F:\SVN Dir\PQ\iSAM Test Bench\Bridge_Audio_Dev\at91sam #
+#                    7s-ek\ewp\at91sam7x512_flash\Obj\USBDCallbacks_Suspended #
+#                    .o" "F:\SVN Dir\PQ\iSAM Test                             #
+#                    Bench\Bridge_Audio_Dev\at91sam7s-ek\ewp\at91sam7x512_fla #
+#                    sh\Obj\USBDDriver.o" "F:\SVN Dir\PQ\iSAM Test            #
+#                    Bench\Bridge_Audio_Dev\at91sam7s-ek\ewp\at91sam7x512_fla #
+#                    sh\Obj\USBDDriverCallbacks_ConfigurationChanged.o"       #
+#                    "F:\SVN Dir\PQ\iSAM Test Bench\Bridge_Audio_Dev\at91sam7 #
+#                    s-ek\ewp\at91sam7x512_flash\Obj\USBD_UDP.o" "F:\SVN      #
+#                    Dir\PQ\iSAM Test Bench\Bridge_Audio_Dev\at91sam7s-ek\ewp #
+#                    \at91sam7x512_flash\Obj\USBEndpointDescriptor.o"         #
+#                    "F:\SVN Dir\PQ\iSAM Test Bench\Bridge_Audio_Dev\at91sam7 #
+#                    s-ek\ewp\at91sam7x512_flash\Obj\USBFeatureRequest.o"     #
+#                    "F:\SVN Dir\PQ\iSAM Test Bench\Bridge_Audio_Dev\at91sam7 #
+#                    s-ek\ewp\at91sam7x512_flash\Obj\USBGenericDescriptor.o"  #
+#                    "F:\SVN Dir\PQ\iSAM Test Bench\Bridge_Audio_Dev\at91sam7 #
+#                    s-ek\ewp\at91sam7x512_flash\Obj\USBGenericRequest.o"     #
+#                    "F:\SVN Dir\PQ\iSAM Test Bench\Bridge_Audio_Dev\at91sam7 #
+#                    s-ek\ewp\at91sam7x512_flash\Obj\USBGetDescriptorRequest. #
+#                    o" "F:\SVN Dir\PQ\iSAM Test                              #
+#                    Bench\Bridge_Audio_Dev\at91sam7s-ek\ewp\at91sam7x512_fla #
+#                    sh\Obj\USBInterfaceRequest.o" "F:\SVN Dir\PQ\iSAM Test   #
+#                    Bench\Bridge_Audio_Dev\at91sam7s-ek\ewp\at91sam7x512_fla #
+#                    sh\Obj\USBSetAddressRequest.o" "F:\SVN Dir\PQ\iSAM Test  #
+#                    Bench\Bridge_Audio_Dev\at91sam7s-ek\ewp\at91sam7x512_fla #
+#                    sh\Obj\USBSetConfigurationRequest.o" "F:\SVN             #
+#                    Dir\PQ\iSAM Test Bench\Bridge_Audio_Dev\at91sam7s-ek\ewp #
+#                    \at91sam7x512_flash\Obj\aic.o" "F:\SVN Dir\PQ\iSAM Test  #
+#                    Bench\Bridge_Audio_Dev\at91sam7s-ek\ewp\at91sam7x512_fla #
+#                    sh\Obj\app.o" "F:\SVN Dir\PQ\iSAM Test                   #
+#                    Bench\Bridge_Audio_Dev\at91sam7s-ek\ewp\at91sam7x512_fla #
+#                    sh\Obj\board_cstartup_iar.o" "F:\SVN Dir\PQ\iSAM Test    #
+#                    Bench\Bridge_Audio_Dev\at91sam7s-ek\ewp\at91sam7x512_fla #
+#                    sh\Obj\board_lowlevel.o" "F:\SVN Dir\PQ\iSAM Test        #
+#                    Bench\Bridge_Audio_Dev\at91sam7s-ek\ewp\at91sam7x512_fla #
+#                    sh\Obj\board_memories.o" "F:\SVN Dir\PQ\iSAM Test        #
+#                    Bench\Bridge_Audio_Dev\at91sam7s-ek\ewp\at91sam7x512_fla #
+#                    sh\Obj\cp15.o" "F:\SVN Dir\PQ\iSAM Test                  #
+#                    Bench\Bridge_Audio_Dev\at91sam7s-ek\ewp\at91sam7x512_fla #
+#                    sh\Obj\cp15_asm_iar.o" "F:\SVN Dir\PQ\iSAM Test          #
+#                    Bench\Bridge_Audio_Dev\at91sam7s-ek\ewp\at91sam7x512_fla #
+#                    sh\Obj\dbgu.o" "F:\SVN Dir\PQ\iSAM Test                  #
+#                    Bench\Bridge_Audio_Dev\at91sam7s-ek\ewp\at91sam7x512_fla #
+#                    sh\Obj\ioSyn.o" "F:\SVN Dir\PQ\iSAM Test                 #
+#                    Bench\Bridge_Audio_Dev\at91sam7s-ek\ewp\at91sam7x512_fla #
+#                    sh\Obj\led.o" "F:\SVN Dir\PQ\iSAM Test                   #
+#                    Bench\Bridge_Audio_Dev\at91sam7s-ek\ewp\at91sam7x512_fla #
+#                    sh\Obj\main.o" "F:\SVN Dir\PQ\iSAM Test                  #
+#                    Bench\Bridge_Audio_Dev\at91sam7s-ek\ewp\at91sam7x512_fla #
+#                    sh\Obj\noah.o" "F:\SVN Dir\PQ\iSAM Test                  #
+#                    Bench\Bridge_Audio_Dev\at91sam7s-ek\ewp\at91sam7x512_fla #
+#                    sh\Obj\pio.o" "F:\SVN Dir\PQ\iSAM Test                   #
+#                    Bench\Bridge_Audio_Dev\at91sam7s-ek\ewp\at91sam7x512_fla #
+#                    sh\Obj\pio_it.o" "F:\SVN Dir\PQ\iSAM Test                #
+#                    Bench\Bridge_Audio_Dev\at91sam7s-ek\ewp\at91sam7x512_fla #
+#                    sh\Obj\ssc.o" "F:\SVN Dir\PQ\iSAM Test                   #
+#                    Bench\Bridge_Audio_Dev\at91sam7s-ek\ewp\at91sam7x512_fla #
+#                    sh\Obj\tc.o" "F:\SVN Dir\PQ\iSAM Test                    #
+#                    Bench\Bridge_Audio_Dev\at91sam7s-ek\ewp\at91sam7x512_fla #
+#                    sh\Obj\trace.o" "F:\SVN Dir\PQ\iSAM Test                 #
+#                    Bench\Bridge_Audio_Dev\at91sam7s-ek\ewp\at91sam7x512_fla #
+#                    sh\Obj\uart.o" "F:\SVN Dir\PQ\iSAM Test                  #
+#                    Bench\Bridge_Audio_Dev\at91sam7s-ek\ewp\at91sam7x512_fla #
+#                    sh\Obj\usart.o" "F:\SVN Dir\PQ\iSAM Test                 #
+#                    Bench\Bridge_Audio_Dev\at91sam7s-ek\ewp\at91sam7x512_fla #
+#                    sh\Obj\usb.o" --redirect _Printf=_PrintfSmall            #
+#                    --redirect _Scanf=_ScanfSmall -o "F:\SVN Dir\PQ\iSAM     #
+#                    Test Bench\Bridge_Audio_Dev\at91sam7s-ek\ewp\at91sam7x51 #
+#                    2_flash\Exe\at91sam7x256_flash.out" --map "F:\SVN        #
+#                    Dir\PQ\iSAM Test Bench\Bridge_Audio_Dev\at91sam7s-ek\ewp #
+#                    \at91sam7x512_flash\List\at91sam7x256_flash.map"         #
+#                    --config "F:\SVN Dir\PQ\iSAM Test                        #
+#                    Bench\Bridge_Audio_Dev\at91sam7s-ek\ewp\..\..\at91lib\bo #
+#                    ards\at91sam7x-ek\at91sam7x512\flash" --diag_suppress    #
+#                    Lp005,Lp006 --semihosting --entry resetHandler --vfe     #
+#                                                                             #
+#                                                                             #
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor                     = *
+__Heap_Handler                = Basic
+__SystemLibrary               = DLib
+__dlib_dynamic_initialization = normal
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"P1":  place in [from 0x00100000 to 0x001000ff] { section .cstartup };
+"P2":  place in [from 0x00100100 to 0x0017ffff] { ro };
+"P3":  place in [from 0x00200000 to 0x002000ff] { section .vectors };
+"P4":  place in [from 0x00200100 to 0x0021ffff] {
+          rw, block IRQ_STACK, block SYS_STACK, block CSTACK, block HEAP };
+
+  Section            Kind        Address    Size  Object
+  -------            ----        -------    ----  ------
+"P1":                                       0x4c
+  .cstartup          ro code  0x00100000    0x4c  board_cstartup_iar.o [1]
+                            - 0x0010004c    0x4c
+
+"P2":                                     0x47f0
+  .text              ro code  0x00100100   0xc56  USBD_UDP.o [1]
+  .text              ro code  0x00100d56     0x2  USBD_UDP.o [1]
+  .text              ro code  0x00100d58    0x24  printf.o [3]
+  .text              ro code  0x00100d7c     0x2  USBD_UDP.o [1]
+  .text              ro code  0x00100d7e    0x5e  USBGenericRequest.o [1]
+  .text              ro code  0x00100ddc   0x280  AUDDSpeakerDriver.o [1]
+  .text              ro code  0x0010105c    0x2e  USBEndpointDescriptor.o [1]
+  .text              ro code  0x0010108a    0x2a  zero_init3.o [4]
+  .text              ro code  0x001010b4    0x14  USBDCallbacks_Suspended.o [1]
+  .text              ro code  0x001010c8    0x28  USBDCallbacks_Resumed.o [1]
+  .text              ro code  0x001010f0     0x2  USBDCallbacks_Reset.o [1]
+  .text              ro code  0x001010f4   0x102  pio.o [1]
+  .text              ro code  0x001011f8    0x20  USBDCallbacks_Initialized.o [1]
+  .text              ro code  0x00101218   0x7c6  xprintfsmall.o [3]
+  .text              ro code  0x001019de    0x42  AUDDSpeakerChannel.o [1]
+  .text              ro code  0x00101a20   0x5b0  USBDDriver.o [1]
+  .text              ro code  0x00101fd0    0x22  AUDGenericRequest.o [1]
+  .text              ro code  0x00101ff2    0x22  AUDFeatureUnitRequest.o [1]
+  .text              ro code  0x00102014    0xb4  led.o [1]
+  .text              ro code  0x001020c8    0x40  aic.o [1]
+  .text              ro code  0x00102108    0x20  xmbtowc.o [3]
+  Veneer             ro code  0x00102128     0x4  - Linker created -
+  .text              ro code  0x0010212c    0x20  strchr.o [4]
+  Veneer             ro code  0x0010214c     0x4  - Linker created -
+  .text              ro code  0x00102150    0x54  strlen.o [4]
+  Veneer             ro code  0x001021a4     0x4  - Linker created -
+  .text              ro code  0x001021a8    0x94  memchr.o [4]
+  .text              ro code  0x0010223c     0xc  xmbcurmax.o [3]
+  .text              ro code  0x00102248    0xbc  xxmemxmalloc.o [3]
+  .text              ro code  0x00102304    0x1c  xwctomb.o [3]
+  Veneer             ro code  0x00102320     0x4  - Linker created -
+  .text              ro code  0x00102324    0xd4  ABImemcpy.o [4]
+  .text              ro code  0x001023f8    0x8c  xxmemxfree.o [3]
+  Veneer             ro code  0x00102484     0x4  - Linker created -
+  .text              ro code  0x00102488   0x1a4  I32DivMod.o [4]
+  .text              ro code  0x0010262c   0x1f4  usb.o [1]
+  .text              ro code  0x00102820     0xe  USBGenericDescriptor.o [1]
+  .text              ro code  0x0010282e    0x9e  USBConfigurationDescriptor.o [1]
+  Veneer             ro code  0x001028cc     0x4  - Linker created -
+  .text              ro code  0x001028d0    0x7c  ABImemset.o [4]
+  .text              ro code  0x0010294c    0x22  USBGetDescriptorRequest.o [1]
+  .text              ro code  0x0010296e    0x12  USBSetAddressRequest.o [1]
+  .text              ro code  0x00102980    0x12  USBSetConfigurationRequest.o [1]
+  .text              ro code  0x00102992    0x12  USBFeatureRequest.o [1]
+  .text              ro code  0x001029a4    0x24  USBInterfaceRequest.o [1]
+  .text              ro code  0x001029c8    0x18  setlocale.o [3]
+  .text              ro code  0x001029e0    0x50  xencoding_sb.o [3]
+  .text              ro code  0x00102a30    0x28  xgetmemchunk.o [3]
+  .text              ro code  0x00102a58     0x4  IntDivZer.o [4]
+  .text              ro code  0x00102a5c   0x140  ssc.o [1]
+  .text              ro code  0x00102b9c   0x18c  ioSyn.o [1]
+  .text              ro code  0x00102d28    0x34  AUDDSpeakerDriverDescriptors.o [1]
+  .text              ro code  0x00102d5c   0x2ca  pio_it.o [1]
+  .text              ro code  0x00103026     0x2  xtls.o [3]
+  Veneer             ro code  0x00103028     0x4  - Linker created -
+  .text              ro code  0x0010302c    0x14  noah.o [1]
+  .text              ro code  0x00103040   0x6c4  noah.o [1]
+  .text              ro code  0x00103704    0xf8  usart.o [1]
+  Veneer             ro code  0x001037fc     0x4  - Linker created -
+  .text              ro code  0x00103800    0x20  uread4.o [4]
+  .text              ro code  0x00103820   0x230  I2s.o [1]
+  Veneer             ro code  0x00103a50     0x4  - Linker created -
+  .text              ro code  0x00103a54    0x20  noah.o [1]
+  .text              ro code  0x00103a74   0x254  app.o [1]
+  Veneer             ro code  0x00103cc8     0x4  - Linker created -
+  .text              ro code  0x00103ccc     0x8  ABImemclr4.o [4]
+  .text              ro code  0x00103cd4    0x3c  ABImemset48.o [4]
+  .text              ro code  0x00103d10   0x224  board_lowlevel.o [1]
+  .text              ro code  0x00103f34    0x1e  board_memories.o [1]
+  .text              ro code  0x00103f54   0x1f8  main.o [1]
+  .text              ro code  0x0010414c    0x10  tc.o [1]
+  .text              ro code  0x0010415c   0x158  uart.o [1]
+  .text              ro code  0x001042b4    0x4c  dbgu.o [1]
+  .text              ro code  0x00104300    0xd6  packbits_init3.o [4]
+  .rodata            const    0x001043d8    0x70  AUDDSpeakerDriverDescriptors.o [1]
+  .text              ro code  0x00104448    0x50  data_init3.o [4]
+  .text              ro code  0x00104498    0x28  USBDDriverCallbacks_ConfigurationChanged.o [1]
+  Veneer             ro code  0x001044c0     0xc  - Linker created -
+  Veneer             ro code  0x001044cc     0xc  - Linker created -
+  Veneer             ro code  0x001044d8     0xc  - Linker created -
+  .text              ro code  0x001044e4    0x24  cmain.o [4]
+  .text              ro code  0x00104508     0x4  low_level_init.o [3]
+  .text              ro code  0x0010450c     0xa  exit.o [3]
+  .text              ro code  0x00104518    0x1c  exit.o [5]
+  Veneer             ro code  0x00104534     0x4  - Linker created -
+  .text              ro code  0x00104538    0x10  cexit.o [4]
+  .iar.init_table    const    0x00104548    0x48  - Linker created -
+  .text              ro code  0x00104590    0x1a  xprout.o [3]
+  .text              ro code  0x001045ac    0x16  trace.o [1]
+  .rodata            const    0x001045c4     0xc  ioSyn.o [1]
+  .text              ro code  0x001045d0     0x4  xreturnswi.o [5]
+  .rodata            const    0x001045d4     0x0  zero_init3.o [4]
+  .rodata            const    0x001045d4     0x0  packbits_init3.o [4]
+  Initializer bytes  ro data  0x001045d4   0x28f  <for P4 s0>
+  Initializer bytes  ro data  0x00104863    0x8a  <for P3 s1>
+                            - 0x001048ed  0x47ed
+
+"P3":                                       0x88
+  P3 s1                       0x00200000    0x88  <Init block>
+    .vectors         inited   0x00200000    0x88  board_cstartup_iar.o [1]
+                            - 0x00200088    0x88
+
+"P4", part 1 of 3:                         0x5c0
+  P4 s0                       0x00200100   0x5c0  <Init block>
+    .data            inited   0x00200100   0x340  app.o [1]
+    .data            inited   0x00200440    0xcc  AUDDSpeakerDriverDescriptors.o [1]
+    .textrw          inited   0x0020050c    0xb4  ioSyn.o [1]
+    .textrw          inited   0x002005c0    0x98  USBD_UDP.o [1]
+    .data            inited   0x00200658    0x34  AUDDSpeakerDriverDescriptors.o [1]
+    .textrw          inited   0x0020068c    0x24  tc.o [1]
+    .data            inited   0x002006b0    0x10  AUDDSpeakerDriverDescriptors.o [1]
+                            - 0x002006c0   0x5c0
+
+"P4", part 2 of 3:                         0x3d8
+  .bss               zero     0x002006c0   0x100  app.o [1]
+  .bss               zero     0x002007c0    0xa8  USBD_UDP.o [1]
+  .bss               zero     0x00200868    0xa8  noah.o [1]
+  __DLIB_PERTHREAD   zero     0x00200910    0x74  setlocale.o [3]
+  .bss               zero     0x00200984    0x3c  pio_it.o [1]
+  .bss               zero     0x002009c0    0x34  noah.o [1]
+  .bss               zero     0x002009f4    0x28  app.o [1]
+  .bss               zero     0x00200a1c    0x20  noah.o [1]
+  .bss               zero     0x00200a3c    0x18  AUDDSpeakerDriver.o [1]
+  .bss               zero     0x00200a54    0x10  ssc.o [1]
+  .bss               zero     0x00200a64     0xc  app.o [1]
+  .bss               zero     0x00200a70     0x8  USBD_UDP.o [1]
+  .bss               zero     0x00200a78     0x8  app.o [1]
+  .bss               zero     0x00200a80     0x8  xxmemxmalloc.o [3]
+  .bss               zero     0x00200a88     0x4  app.o [1]
+  .bss               zero     0x00200a8c     0x4  app.o [1]
+  .bss               zero     0x00200a90     0x4  xgetmemchunk.o [3]
+  .bss               zero     0x00200a94     0x1  app.o [1]
+  .bss               zero     0x00200a95     0x1  app.o [1]
+  .bss               zero     0x00200a96     0x1  ioSyn.o [1]
+                            - 0x00200a97   0x3d7
+
+"P4", part 3 of 3:                        0x1068
+  CSTACK                      0x00200a98  0x1000  <Block>
+    CSTACK           uninit   0x00200a98  0x1000  <Block tail>
+  IRQ_STACK                   0x00201a98    0x60  <Block>
+    IRQ_STACK        uninit   0x00201a98    0x60  <Block tail>
+  .noinit            uninit   0x00201af8     0x2  AUDDSpeakerDriver.o [1]
+  HEAP                        0x00201b00     0x0  <Block>
+                            - 0x00201b00  0x1068
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address     Size
+          -------     ----
+Zero (__iar_zero_init3)
+    1 destination range, total size 0x3d7:
+          0x002006c0  0x3d7
+
+Copy/packbits (__iar_packbits_init3)
+    1 source range, total size 0x28f (44% of destination):
+          0x001045d4  0x28f
+    1 destination range, total size 0x5c0:
+          0x00200100  0x5c0
+
+Copy/packbits (__iar_packbits_init3)
+    1 source range, total size 0x8a (101% of destination):
+          0x00104863   0x8a
+    1 destination range, total size 0x88:
+          0x00200000   0x88
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module                                      ro code  rw code  ro data  rw data
+    ------                                      -------  -------  -------  -------
+F:\SVN Dir\PQ\iSAM Test Bench\Bridge_Audio_Dev\at91sam7s-ek\ewp\at91sam7x512_flash\Obj: [1]
+    AUDDSpeakerChannel.o                             66
+    AUDDSpeakerDriver.o                             640                         26
+    AUDDSpeakerDriverDescriptors.o                   52               233      272
+    AUDFeatureUnitRequest.o                          34
+    AUDGenericRequest.o                              34
+    I2s.o                                           560
+    USBConfigurationDescriptor.o                    158
+    USBDCallbacks_Initialized.o                      32
+    USBDCallbacks_Reset.o                             2
+    USBDCallbacks_Resumed.o                          40
+    USBDCallbacks_Suspended.o                        20
+    USBDDriver.o                                  1 456
+    USBDDriverCallbacks_ConfigurationChanged.o       40
+    USBD_UDP.o                                    3 162      152       67      176
+    USBEndpointDescriptor.o                          46
+    USBFeatureRequest.o                              18
+    USBGenericDescriptor.o                           14
+    USBGenericRequest.o                              94
+    USBGetDescriptorRequest.o                        34
+    USBInterfaceRequest.o                            36
+    USBSetAddressRequest.o                           18
+    USBSetConfigurationRequest.o                     18
+    aic.o                                            64
+    app.o                                           596               370    1 158
+    board_cstartup_iar.o                             76      136      138
+    board_lowlevel.o                                548
+    board_memories.o                                 30
+    dbgu.o                                           76
+    ioSyn.o                                         396      180       93        1
+    led.o                                           180
+    main.o                                          504
+    noah.o                                        1 784                        252
+    pio.o                                           258
+    pio_it.o                                        714                         60
+    ssc.o                                           320                         16
+    tc.o                                             16       36       16
+    trace.o                                          22
+    uart.o                                          344
+    usart.o                                         248
+    usb.o                                           500
+    ------------------------------------------------------------------------------
+    Total:                                       13 250      504      917    1 961
+
+command line: [2]
+    ------------------------------------------------------------------------------
+    Total:
+
+dl4t_tlf.a: [3]
+    exit.o                                           10
+    low_level_init.o                                  4
+    printf.o                                         36
+    setlocale.o                                      24                        116
+    xencoding_sb.o                                   80
+    xgetmemchunk.o                                   40                          4
+    xmbcurmax.o                                      12
+    xmbtowc.o                                        32
+    xprintfsmall.o                                1 990
+    xprout.o                                         26
+    xtls.o                                            2
+    xwctomb.o                                        28
+    xxmemxfree.o                                    140
+    xxmemxmalloc.o                                  188                          8
+    ------------------------------------------------------------------------------
+    Total:                                        2 612                        128
+
+rt4t_al.a: [4]
+    ABImemclr4.o                                      8
+    ABImemcpy.o                                     212
+    ABImemset.o                                     124
+    ABImemset48.o                                    60
+    I32DivMod.o                                     420
+    IntDivZer.o                                       4
+    cexit.o                                          16
+    cmain.o                                          36
+    data_init3.o                                     80
+    memchr.o                                        148
+    packbits_init3.o                                214
+    strchr.o                                         32
+    strlen.o                                         84
+    uread4.o                                         32
+    zero_init3.o                                     42
+    ------------------------------------------------------------------------------
+    Total:                                        1 512
+
+shs_l.a: [5]
+    exit.o                                           28
+    xreturnswi.o                                      4
+    ------------------------------------------------------------------------------
+    Total:                                           32
+
+    Gaps                                             10                 4
+    Linker created                                   80                72    4 192
+----------------------------------------------------------------------------------
+    Grand Total:                                 17 496      504      993    6 281
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                      Address   Size  Type      Object
+-----                      -------   ----  ----      ------
+?main                   0x001044e4         Code  Gb  cmain.o [4]
+AT91_PIT_Init           0x0010414d    0x8  Code  Gb  tc.o [1]
+AUDDSpeakerChannel_GetNumber
+                        0x001019e5    0x4  Code  Gb  AUDDSpeakerChannel.o [1]
+AUDDSpeakerChannel_Initialize
+                        0x001019df    0x6  Code  Gb  AUDDSpeakerChannel.o [1]
+AUDDSpeakerChannel_IsMuted
+                        0x00101a1d    0x4  Code  Gb  AUDDSpeakerChannel.o [1]
+AUDDSpeakerChannel_Mute
+                        0x001019e9   0x1a  Code  Gb  AUDDSpeakerChannel.o [1]
+AUDDSpeakerChannel_MuteChanged
+                        0x0010264d    0xe  Code  Gb  usb.o [1]
+AUDDSpeakerChannel_Unmute
+                        0x00101a03   0x1a  Code  Gb  AUDDSpeakerChannel.o [1]
+AUDDSpeakerDriver_Initialize
+                        0x00100e3f   0x3c  Code  Gb  AUDDSpeakerDriver.o [1]
+AUDDSpeakerDriver_MuteReceived
+                        0x00100ddd   0x32  Code  Lc  AUDDSpeakerDriver.o [1]
+AUDDSpeakerDriver_Read  0x0010100d   0x18  Code  Gb  AUDDSpeakerDriver.o [1]
+AUDDSpeakerDriver_RequestHandler
+                        0x00100e7d  0x17a  Code  Gb  AUDDSpeakerDriver.o [1]
+AUDDSpeakerDriver_Write
+                        0x00101025   0x18  Code  Gb  AUDDSpeakerDriver.o [1]
+AUDFeatureUnitRequest_GetChannel
+                        0x00102003   0x12  Code  Gb  AUDFeatureUnitRequest.o [1]
+AUDFeatureUnitRequest_GetControl
+                        0x00101ff3   0x10  Code  Gb  AUDFeatureUnitRequest.o [1]
+AUDGenericRequest_GetEntity
+                        0x00101fd1   0x10  Code  Gb  AUDGenericRequest.o [1]
+AUDGenericRequest_GetInterface
+                        0x00101fe1   0x12  Code  Gb  AUDGenericRequest.o [1]
+Abort_Handler           0x00103d4d    0xa  Code  Gb  board_lowlevel.o [1]
+Audio_ID                0x00200a95    0x1  Data  Gb  app.o [1]
+Audio_ID_Pins           0x00103ca4   0x24  Data  Gb  app.o [1]
+BOARD_RemapRam          0x00103f35   0x1e  Code  Gb  board_memories.o [1]
+CSTACK$$Base            0x00200a98          --   Gb  - Linker created -
+CSTACK$$Limit           0x00201a98          --   Gb  - Linker created -
+ChechLenPerFramInt      0x00200a18    0x4  Data  Gb  app.o [1]
+CheckSum_Task           0x00103aaf   0x3a  Code  Gb  app.o [1]
+Check_Audio_ID          0x00103a75   0x3a  Code  Gb  app.o [1]
+CmdDn                   0x00103405  0x1de  Code  Gb  noah.o [1]
+DBGU_Configure          0x001042b5   0x2c  Code  Gb  dbgu.o [1]
+DBGU_PutChar            0x001042e1   0x10  Code  Gb  dbgu.o [1]
+EnableSscSync           0x00102bad   0x28  Code  Gb  ioSyn.o [1]
+EnableSscSync_rx        0x00102be5   0x28  Code  Gb  ioSyn.o [1]
+EnableSynInt            0x00102b9d   0x10  Code  Gb  ioSyn.o [1]
+EnableSynInt_rx         0x00102bd5   0x10  Code  Gb  ioSyn.o [1]
+FIQ_Handler             0x00103d41    0xa  Code  Gb  board_lowlevel.o [1]
+FramRat                 0x00200104    0x4  Data  Gb  app.o [1]
+FrameReceived           0x0010265b   0xb0  Code  Gb  usb.o [1]
+FrameSend               0x0010270d   0x68  Code  Gb  usb.o [1]
+GetDescriptor           0x00101a21  0x14c  Code  Lc  USBDDriver.o [1]
+HEAP$$Base              0x00201b00          --   Gb  - Linker created -
+HEAP$$Limit             0x00201b00          --   Gb  - Linker created -
+I2S_On                  0x00200a6c    0x4  Data  Gb  app.o [1]
+I2S_RxOn                0x00200a64    0x4  Data  Gb  app.o [1]
+I2S_TxOn                0x00200a68    0x4  Data  Gb  app.o [1]
+I2s_Init                0x0010392f   0x9e  Code  Gb  I2s.o [1]
+IO_synISR_Play_LR       0x0020050d   0x26  Code  Gb  ioSyn.o [1]
+IO_synISR_Play_RL       0x00200533   0x2c  Code  Gb  ioSyn.o [1]
+IO_synISR_Rec_LR        0x0020055f   0x28  Code  Gb  ioSyn.o [1]
+IO_synISR_Rec_RL        0x00200587   0x2e  Code  Gb  ioSyn.o [1]
+IO_synInit              0x00102c31   0x8c  Code  Gb  ioSyn.o [1]
+IRQ_ConfigureIT         0x001020c9   0x1a  Code  Gb  aic.o [1]
+IRQ_DisableIT           0x001020ed    0xa  Code  Gb  aic.o [1]
+IRQ_EnableIT            0x001020e3    0xa  Code  Gb  aic.o [1]
+IRQ_STACK$$Base         0x00201a98          --   Gb  - Linker created -
+IRQ_STACK$$Limit        0x00201af8          --   Gb  - Linker created -
+ISR_SSC                 0x00103821  0x10e  Code  Lc  I2s.o [1]
+ISR_Usart0              0x0010415d   0xa2  Code  Lc  uart.o [1]
+ISR_Vbus                0x0010262d   0x1e  Code  Lc  usb.o [1]
+InitI2S_Task            0x00103ae9  0x192  Code  Gb  app.o [1]
+InitSSC                 0x00102ad7   0x92  Code  Gb  ssc.o [1]
+LED_Clear               0x00102069   0x30  Code  Gb  led.o [1]
+LED_Configure           0x00102015   0x22  Code  Gb  led.o [1]
+LED_Set                 0x00102039   0x30  Code  Gb  led.o [1]
+LowLevelInit            0x00103d6f   0x9e  Code  Gb  board_lowlevel.o [1]
+PIO_Clear               0x001011cd    0x8  Code  Gb  pio.o [1]
+PIO_Configure           0x001010f5   0xcc  Code  Gb  pio.o [1]
+PIO_ConfigureIt         0x00102e13   0x80  Code  Gb  pio_it.o [1]
+PIO_EnableIt            0x00102e93   0x8c  Code  Gb  pio_it.o [1]
+PIO_Get                 0x001011d5   0x22  Code  Gb  pio.o [1]
+PIO_IT_InterruptHandler
+                        0x00102d5d   0x64  Code  Gb  pio_it.o [1]
+PIO_InitializeInterrupts
+                        0x00102dc1   0x52  Code  Gb  pio_it.o [1]
+PIO_Set                 0x001011c5    0x8  Code  Gb  pio.o [1]
+PcCmdBufNum             0x00200868    0x1  Data  Gb  noah.o [1]
+PcCmdCheckSum           0x0020086b    0x1  Data  Gb  noah.o [1]
+PcCmdFlag               0x0020086a    0x1  Data  Gb  noah.o [1]
+PcCmdLen                0x00200869    0x1  Data  Gb  noah.o [1]
+PcCmdPtr                0x00200888    0x4  Data  Gb  noah.o [1]
+PcCmdRxId               0x0020086c    0x1  Data  Gb  noah.o [1]
+PcCmdRxdBuf             0x00200894   0x7c  Data  Gb  noah.o [1]
+PcCmdTxId               0x0020086d    0x1  Data  Gb  noah.o [1]
+Prefetch_Handler        0x00103d59    0xa  Code  Gb  board_lowlevel.o [1]
+RawReadBuf              0x00200a1c   0x20  Data  Gb  noah.o [1]
+Region$$Table$$Base     0x00104548          --   Gb  - Linker created -
+Region$$Table$$Limit    0x00104590          --   Gb  - Linker created -
+RxCrcLen                0x00200a00    0x4  Data  Gb  app.o [1]
+RxEn                    0x00102cec    0xc  Data  Gb  ioSyn.o [1]
+RxdCrcSum               0x002009f4    0x4  Data  Gb  app.o [1]
+RxdCrcSumP              0x002009f8    0x4  Data  Gb  app.o [1]
+RxdOn                   0x002009fc    0x4  Data  Gb  app.o [1]
+SSC_DisableReceiver     0x00102a77    0x6  Code  Gb  ssc.o [1]
+SSC_DisableTransmitter  0x00102a5d    0x8  Code  Gb  ssc.o [1]
+SSC_InitReceiver        0x00102a7d   0x12  Code  Gb  ssc.o [1]
+SSC_InitTransmitter     0x00102a65   0x12  Code  Gb  ssc.o [1]
+SSC_Pins                0x001045c4    0xc  Data  Gb  ioSyn.o [1]
+SSC_Pins_Float          0x00102d1c    0xc  Data  Gb  ioSyn.o [1]
+SSC_ReadBuffer          0x00102ab3   0x24  Code  Gb  ssc.o [1]
+SSC_WriteBuffer         0x00102a8f   0x24  Code  Gb  ssc.o [1]
+SWI_Handler             0x00103d35    0xa  Code  Gb  board_lowlevel.o [1]
+SendDak                 0x0010312d   0x5c  Code  Gb  noah.o [1]
+SendDat                 0x001031e9   0xdc  Code  Gb  noah.o [1]
+SendReport              0x00103189   0x5c  Code  Gb  noah.o [1]
+SetBratInDescriptor     0x00102d29   0x2a  Code  Gb  AUDDSpeakerDriverDescriptors.o [1]
+StRcd                   0x00102cd4    0xc  Data  Gb  ioSyn.o [1]
+StRcd_2                 0x00102cc8    0xc  Data  Gb  ioSyn.o [1]
+StartRcd_Task           0x00102c0d   0x20  Code  Gb  ioSyn.o [1]
+SynClk                  0x00102d10    0xc  Data  Gb  ioSyn.o [1]
+Test                    0x00102cbc    0xc  Data  Gb  ioSyn.o [1]
+TxCrcLen                0x00200a14    0x4  Data  Gb  app.o [1]
+TxEn                    0x00102ce0    0xc  Data  Gb  ioSyn.o [1]
+TxdCheckIndx            0x00200a10    0x4  Data  Gb  app.o [1]
+TxdCrcSum               0x00200a04    0x4  Data  Gb  app.o [1]
+TxdCrcSumP              0x00200a08    0x4  Data  Gb  app.o [1]
+TxdOn                   0x00200a0c    0x4  Data  Gb  app.o [1]
+UDP_EndpointHandler     0x00100101  0x3b4  Code  Lc  USBD_UDP.o [1]
+UDP_ReadPayload         0x00200605   0x4c  Code  Lc  USBD_UDP.o [1]
+UDP_WritePayload        0x002005c1   0x44  Code  Lc  USBD_UDP.o [1]
+USART_Configure         0x00103705   0x24  Code  Gb  usart.o [1]
+USART_ReadBuffer        0x001037ad   0x30  Code  Gb  usart.o [1]
+USART_SetReceiverEnabled
+                        0x0010373b    0xe  Code  Gb  usart.o [1]
+USART_SetTransmitterEnabled
+                        0x0010372d    0xe  Code  Gb  usart.o [1]
+USART_Write             0x00103749   0x34  Code  Gb  usart.o [1]
+USART_WriteBuffer       0x0010377d   0x30  Code  Gb  usart.o [1]
+USBConfigurationDescriptor_GetTotalLength
+                        0x0010282f    0xe  Code  Gb  USBConfigurationDescriptor.o [1]
+USBConfigurationDescriptor_IsSelfPowered
+                        0x0010283d   0x10  Code  Gb  USBConfigurationDescriptor.o [1]
+USBConfigurationDescriptor_Parse
+                        0x0010284d   0x80  Code  Gb  USBConfigurationDescriptor.o [1]
+USBDCallbacks_Initialized
+                        0x001011f9   0x20  Code  Gb  USBDCallbacks_Initialized.o [1]
+USBDCallbacks_RequestReceived
+                        0x00100e0f    0xe  Code  Gb  AUDDSpeakerDriver.o [1]
+USBDCallbacks_Reset     0x001010f1    0x2  Code  Gb  USBDCallbacks_Reset.o [1]
+USBDCallbacks_Resumed   0x001010c9   0x28  Code  Gb  USBDCallbacks_Resumed.o [1]
+USBDCallbacks_Suspended
+                        0x001010b5   0x14  Code  Gb  USBDCallbacks_Suspended.o [1]
+USBDDriverCallbacks_ConfigurationChanged
+                        0x00104499   0x10  Code  Gb  USBDDriverCallbacks_ConfigurationChanged.o [1]
+USBDDriverCallbacks_InterfaceSettingChanged
+                        0x00100e1d   0x22  Code  Gb  AUDDSpeakerDriver.o [1]
+USBDDriver_Initialize   0x00101bd9   0x26  Code  Gb  USBDDriver.o [1]
+USBDDriver_RequestHandler
+                        0x00101c01  0x2b8  Code  Gb  USBDDriver.o [1]
+USBD_ConfigureEndpoint  0x001004bd   0xe2  Code  Gb  USBD_UDP.o [1]
+USBD_Connect            0x00100b69   0x28  Code  Gb  USBD_UDP.o [1]
+USBD_Disconnect         0x00100b91   0x34  Code  Gb  USBD_UDP.o [1]
+USBD_GetState           0x00100c3f    0x6  Code  Gb  USBD_UDP.o [1]
+USBD_Halt               0x001008dd   0x80  Code  Gb  USBD_UDP.o [1]
+USBD_Init               0x00100bcd   0x72  Code  Gb  USBD_UDP.o [1]
+USBD_InterruptHandler   0x001005b1  0x242  Code  Gb  USBD_UDP.o [1]
+USBD_IsHalted           0x001009cb   0x12  Code  Gb  USBD_UDP.o [1]
+USBD_IsHighSpeed        0x00100c79    0x4  Code  Gb  USBD_UDP.o [1]
+USBD_Read               0x0010088d   0x3e  Code  Gb  USBD_UDP.o [1]
+USBD_SetAddress         0x00100a33   0x32  Code  Gb  USBD_UDP.o [1]
+USBD_SetConfiguration   0x00100a69   0xf6  Code  Gb  USBD_UDP.o [1]
+USBD_Stall              0x001009dd   0x56  Code  Gb  USBD_UDP.o [1]
+USBD_Unhalt             0x00100969   0x62  Code  Gb  USBD_UDP.o [1]
+USBD_Write              0x001007fd   0x86  Code  Gb  USBD_UDP.o [1]
+USBEndpointDescriptor_GetDirection
+                        0x00101065   0x10  Code  Gb  USBEndpointDescriptor.o [1]
+USBEndpointDescriptor_GetMaxPacketSize
+                        0x0010107d    0xe  Code  Gb  USBEndpointDescriptor.o [1]
+USBEndpointDescriptor_GetNumber
+                        0x0010105d    0x8  Code  Gb  USBEndpointDescriptor.o [1]
+USBEndpointDescriptor_GetType
+                        0x00101075    0x8  Code  Gb  USBEndpointDescriptor.o [1]
+USBFeatureRequest_GetFeatureSelector
+                        0x00102993   0x12  Code  Gb  USBFeatureRequest.o [1]
+USBGenericDescriptor_GetLength
+                        0x00102821    0x4  Code  Gb  USBGenericDescriptor.o [1]
+USBGenericDescriptor_GetNextDescriptor
+                        0x00102829    0x6  Code  Gb  USBGenericDescriptor.o [1]
+USBGenericDescriptor_GetType
+                        0x00102825    0x4  Code  Gb  USBGenericDescriptor.o [1]
+USBGenericRequest_GetDirection
+                        0x00100dcd   0x10  Code  Gb  USBGenericRequest.o [1]
+USBGenericRequest_GetEndpointNumber
+                        0x00100db5   0x10  Code  Gb  USBGenericRequest.o [1]
+USBGenericRequest_GetIndex
+                        0x00100d99    0xe  Code  Gb  USBGenericRequest.o [1]
+USBGenericRequest_GetLength
+                        0x00100da7    0xe  Code  Gb  USBGenericRequest.o [1]
+USBGenericRequest_GetRecipient
+                        0x00100dc5    0x8  Code  Gb  USBGenericRequest.o [1]
+USBGenericRequest_GetRequest
+                        0x00100d87    0x4  Code  Gb  USBGenericRequest.o [1]
+USBGenericRequest_GetType
+                        0x00100d7f    0x8  Code  Gb  USBGenericRequest.o [1]
+USBGenericRequest_GetValue
+                        0x00100d8b    0xe  Code  Gb  USBGenericRequest.o [1]
+USBGetDescriptorRequest_GetDescriptorIndex
+                        0x0010295d   0x12  Code  Gb  USBGetDescriptorRequest.o [1]
+USBGetDescriptorRequest_GetDescriptorType
+                        0x0010294d   0x10  Code  Gb  USBGetDescriptorRequest.o [1]
+USBInterfaceRequest_GetAlternateSetting
+                        0x001029b7   0x12  Code  Gb  USBInterfaceRequest.o [1]
+USBInterfaceRequest_GetInterface
+                        0x001029a5   0x12  Code  Gb  USBInterfaceRequest.o [1]
+USBSetAddressRequest_GetAddress
+                        0x0010296f   0x12  Code  Gb  USBSetAddressRequest.o [1]
+USBSetConfigurationRequest_GetConfiguration
+                        0x00102981   0x12  Code  Gb  USBSetConfigurationRequest.o [1]
+Uart_Init               0x00104201   0x80  Code  Gb  uart.o [1]
+Uart_Pins               0x0010429c   0x18  Data  Lc  uart.o [1]
+Undefined_Handler       0x00103d65    0xa  Code  Gb  board_lowlevel.o [1]
+Usb_Init                0x00102775   0x4e  Code  Gb  usb.o [1]
+_EncodingSb_Mbtowc      0x001029f5   0x2c  Code  Gb  xencoding_sb.o [3]
+_EncodingSb_Wctomb      0x001029e1   0x14  Code  Gb  xencoding_sb.o [3]
+_IsdstStr               0x00200914    0x4  Data  Gb  setlocale.o [3]
+_LitobSmall             0x00101881  0x106  Code  Lc  xprintfsmall.o [3]
+_LocaleEncoding         0x001029c9   0x10  Code  Gb  setlocale.o [3]
+_LocaleReturnString     0x00200934   0x50  Data  Lc  setlocale.o [3]
+_Locale_Profile         0x00200918   0x1c  Data  Gb  setlocale.o [3]
+_Mbtowc                 0x00102109   0x20  Code  Gb  xmbtowc.o [3]
+_PrintfSmall            0x00101219  0x44a  Code  Gb  xprintfsmall.o [3]
+_Prout                  0x00104591   0x1a  Code  Gb  xprout.o [3]
+_PutcharsSmall          0x0010198d   0x36  Code  Lc  xprintfsmall.o [3]
+_PutstrSmall            0x00101665  0x216  Code  Lc  xprintfsmall.o [3]
+_TzoneStr               0x00200910    0x4  Data  Gb  setlocale.o [3]
+_Wctomb                 0x00102305   0x1c  Code  Gb  xwctomb.o [3]
+__ICFEDIT_region_RAM_end__ {Abs}
+                        0x0021ffff          --   Gb  command line/config [2]
+__ICFEDIT_region_RAM_start__ {Abs}
+                        0x00200000          --   Gb  command line/config [2]
+__ICFEDIT_region_ROM_end__ {Abs}
+                        0x0017ffff          --   Gb  command line/config [2]
+__ICFEDIT_region_ROM_start__ {Abs}
+                        0x00100000          --   Gb  command line/config [2]
+__ICFEDIT_size_cstack__ {Abs}
+                        0x00001000          --   Gb  command line/config [2]
+__ICFEDIT_size_heap__ {Abs}
+                        0x00000000          --   Gb  command line/config [2]
+__ICFEDIT_size_irqstack__ {Abs}
+                        0x00000060          --   Gb  command line/config [2]
+__ICFEDIT_size_startup__ {Abs}
+                        0x00000100          --   Gb  command line/config [2]
+__ICFEDIT_size_sysstack__ {Abs}
+                        0x00000060          --   Gb  command line/config [2]
+__ICFEDIT_size_vectors__ {Abs}
+                        0x00000100          --   Gb  command line/config [2]
+__aeabi_idiv0           0x00102a58         Code  Gb  IntDivZer.o [4]
+__aeabi_memclr4         0x00103ccc         Code  Gb  ABImemclr4.o [4]
+__aeabi_memcpy          0x00102324         Code  Gb  ABImemcpy.o [4]
+__aeabi_memcpy4         0x00102348         Code  Gb  ABImemcpy.o [4]
+__aeabi_memcpy8         0x00102348         Code  Gb  ABImemcpy.o [4]
+__aeabi_memset          0x001028d0         Code  Gb  ABImemset.o [4]
+__aeabi_uidiv           0x00102488         Code  Gb  I32DivMod.o [4]
+__aeabi_uidivmod        0x00102488         Code  Gb  I32DivMod.o [4]
+__aeabi_uread4          0x00103800         Code  Gb  uread4.o [4]
+__cmain                 0x001044e4         Code  Gb  cmain.o [4]
+__data_Aldata           0x00200a80    0x8  Data  Gb  xxmemxmalloc.o [3]
+__data_GetMemChunk      0x00102a31   0x28  Code  Gb  xgetmemchunk.o [3]
+__exit                  0x00104518   0x1c  Code  Gb  exit.o [5]
+__iar_Mbcurmax          0x0010223d    0xc  Code  Gb  xmbcurmax.o [3]
+__iar_Memchr            0x001021a8         Code  Gb  memchr.o [4]
+__iar_Memset            0x001028d0         Code  Gb  ABImemset.o [4]
+__iar_Memset4_word      0x00103cd4         Code  Gb  ABImemset48.o [4]
+__iar_Memset8_word      0x00103cd4         Code  Gb  ABImemset48.o [4]
+__iar_Memset_word       0x001028dc         Code  Gb  ABImemset.o [4]
+__iar_Strchr            0x0010212c         Code  Gb  strchr.o [4]
+__iar_data_init3        0x00104448   0x50  Code  Gb  data_init3.o [4]
+__iar_divu_hw_1000      0x00103a54         Code  Gb  noah.o [1]
+__iar_divu_w_1000       0x0010302c         Code  Gb  noah.o [1]
+__iar_dlib_perthread_access
+                        0x00103027    0x2  Code  Gb  xtls.o [3]
+__iar_packbits_init3    0x00104301   0xd6  Code  Gb  packbits_init3.o [4]
+__iar_return_from_swi   0x001045d0    0x4  Code  Gb  xreturnswi.o [5]
+__iar_zero_init3        0x0010108b   0x2a  Code  Gb  zero_init3.o [4]
+__low_level_init        0x00104509    0x4  Code  Gb  low_level_init.o [3]
+_call_main              0x001044f4         Code  Gb  cmain.o [4]
+_exit                   0x00104538         Code  Gb  cexit.o [4]
+_main                   0x001044fc         Code  Gb  cmain.o [4]
+auddSpeakerDriver       0x00200a40   0x14  Data  Lc  AUDDSpeakerDriver.o [1]
+auddSpeakerDriverDescriptors
+                        0x00104420   0x28  Data  Gb  AUDDSpeakerDriverDescriptors.o [1]
+auddSpeakerDriverInterfaces
+                        0x00201af8    0x2  Data  Gb  AUDDSpeakerDriver.o [1]
+bufferSizes             0x00200a78    0x8  Data  Gb  app.o [1]
+bufferSizes_rcd         0x00200408    0x8  Data  Gb  app.o [1]
+buffers                 0x00200410    0x4  Data  Gb  app.o [1]
+buffers_rcd             0x00200414    0x4  Data  Gb  app.o [1]
+buflen                  0x0020086f    0x1  Data  Lc  noah.o [1]
+cmdtxId                 0x00200872    0x1  Data  Gb  noah.o [1]
+configurationDescriptors
+                        0x00200440   0xcc  Data  Gb  AUDDSpeakerDriverDescriptors.o [1]
+datbuf                  0x002009c0   0x34  Data  Lc  noah.o [1]
+defaultFiqHandler       0x00103d1d    0xa  Code  Gb  board_lowlevel.o [1]
+defaultIrqHandler       0x00103d29    0xa  Code  Gb  board_lowlevel.o [1]
+defaultSpuriousHandler  0x00103d11    0xa  Code  Gb  board_lowlevel.o [1]
+delay_ms                0x0020068d   0x24  Code  Gb  tc.o [1]
+delay_time_us           0x00200890    0x4  Data  Gb  noah.o [1]
+deviceDescriptor        0x00200678   0x14  Data  Gb  AUDDSpeakerDriverDescriptors.o [1]
+deviceState             0x00200a70    0x1  Data  Lc  USBD_UDP.o [1]
+endpoints               0x002007c0   0xa8  Data  Lc  USBD_UDP.o [1]
+exit                    0x0010450d    0xa  Code  Gb  exit.o [3]
+flag_sr_fraction        0x00200100    0x1  Data  Gb  app.o [1]
+free                    0x001023f9   0x86  Code  Gb  xxmemxfree.o [3]
+hstbuf                  0x00200874    0xc  Data  Gb  noah.o [1]
+hstbuflen               0x00200870    0x1  Data  Gb  noah.o [1]
+inBufferIndex           0x00200418    0x4  Data  Gb  app.o [1]
+inBufferIndex_rcd       0x0020041c    0x4  Data  Gb  app.o [1]
+irqHandler              0x00200034         Code  Gb  board_cstartup_iar.o [1]
+isDacActive             0x00200a88    0x4  Data  Gb  app.o [1]
+isRcdActive             0x00200a8c    0x4  Data  Gb  app.o [1]
+languageIdDescriptor    0x001043d8    0x4  Data  Gb  AUDDSpeakerDriverDescriptors.o [1]
+main                    0x00103f55   0xb0  Code  Gb  main.o [1]
+malloc                  0x00102249   0xb6  Code  Gb  xxmemxmalloc.o [3]
+manufacturerDescriptor  0x001043dc   0x20  Data  Gb  AUDDSpeakerDriverDescriptors.o [1]
+memchr                  0x001021a8         Code  Gb  memchr.o [4]
+muted                   0x00200a3c    0x1  Data  Lc  AUDDSpeakerDriver.o [1]
+numBuffersToSend        0x00200420    0x4  Data  Gb  app.o [1]
+numBuffersToSend_rcd    0x00200424    0x4  Data  Gb  app.o [1]
+numSources              0x002009bc    0x4  Data  Lc  pio_it.o [1]
+outBufferIndex          0x00200428    0x4  Data  Gb  app.o [1]
+outBufferIndex_rcd      0x0020042c    0x4  Data  Gb  app.o [1]
+pExtBuf                 0x00200884    0x4  Data  Gb  noah.o [1]
+pIntRxd                 0x00200880    0x4  Data  Gb  noah.o [1]
+pSources                0x00200984   0x38  Data  Lc  pio_it.o [1]
+pcCmdRcv                0x0020086e    0x1  Data  Gb  noah.o [1]
+pcCmdRcv_Task           0x001032c9  0x138  Code  Gb  noah.o [1]
+pcInt                   0x00103041   0xec  Code  Gb  noah.o [1]
+pinSyn                  0x00102cf8    0xc  Data  Gb  ioSyn.o [1]
+pinSyn_rx               0x00102d04    0xc  Data  Gb  ioSyn.o [1]
+pinVbus                 0x00102814    0xc  Data  Lc  usb.o [1]
+pinsLeds                0x00102098   0x30  Data  Lc  led.o [1]
+previousDeviceState     0x00200a71    0x1  Data  Lc  USBD_UDP.o [1]
+printf                  0x00100d59   0x24  Code  Gb  printf.o [3]
+productDescriptor       0x00200658   0x20  Data  Gb  AUDDSpeakerDriverDescriptors.o [1]
+putchar                 0x001045ad   0x14  Code  Gb  trace.o [1]
+rcmr                    0x00200a5c    0x4  Data  Gb  ssc.o [1]
+resetHandler            0x00100000         Code  Gb  board_cstartup_iar.o [1]
+resetVector             0x00200000         Code  Gb  board_cstartup_iar.o [1]
+rfmr                    0x00200a60    0x4  Data  Gb  ssc.o [1]
+rxId                    0x00200871    0x1  Data  Gb  noah.o [1]
+rxbuf                   0x00200108  0x180  Data  Gb  app.o [1]
+rxdatalen               0x0020088c    0x4  Data  Gb  noah.o [1]
+sample_last             0x00200434    0x4  Data  Gb  app.o [1]
+sample_length_long      0x00200438    0x4  Data  Gb  app.o [1]
+sample_length_short     0x0020043c    0x4  Data  Gb  app.o [1]
+sample_total            0x00200430    0x4  Data  Gb  app.o [1]
+serialNumberDescriptor  0x001043fc   0x24  Data  Gb  AUDDSpeakerDriverDescriptors.o [1]
+strchr                  0x0010212c         Code  Gb  strchr.o [4]
+stringDescriptors       0x002006b0   0x10  Data  Gb  AUDDSpeakerDriverDescriptors.o [1]
+strlen                  0x00102150         Code  Gb  strlen.o [4]
+tcmr                    0x00200a54    0x4  Data  Gb  ssc.o [1]
+tfmr                    0x00200a58    0x4  Data  Gb  ssc.o [1]
+txbuf                   0x00200288  0x180  Data  Gb  app.o [1]
+usartBuffers            0x002006c0  0x100  Data  Gb  app.o [1]
+usartCurrentBuffer      0x00200a94    0x1  Data  Gb  app.o [1]
+usb_frame_counter       0x00200a74    0x4  Data  Gb  USBD_UDP.o [1]
+usbsyn                  0x00200a96    0x1  Data  Gb  ioSyn.o [1]
+
+
+[1] = F:\SVN Dir\PQ\iSAM Test Bench\Bridge_Audio_Dev\at91sam7s-ek\ewp\at91sam7x512_flash\Obj
+[2] = command line
+[3] = dl4t_tlf.a
+[4] = rt4t_al.a
+[5] = shs_l.a
+
+  17 496 bytes of readonly  code memory
+     504 bytes of readwrite code memory
+     993 bytes of readonly  data memory
+   6 281 bytes of readwrite data memory
+
+Errors: none
+Warnings: none

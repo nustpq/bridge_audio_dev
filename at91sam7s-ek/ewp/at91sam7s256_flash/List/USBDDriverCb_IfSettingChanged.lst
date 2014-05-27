@@ -1,0 +1,115 @@
+###############################################################################
+#                                                                             #
+# IAR ANSI C/C++ Compiler V5.40.0.51500/W32 for ARM     31/May/2011  16:16:39 #
+# Copyright (C) 1999-2009 IAR Systems AB.                                     #
+#                                                                             #
+#    Cpu mode     =  arm                                                      #
+#    Endian       =  little                                                   #
+#    Source file  =  L:\USB_AUDIO_JII\at91lib\usb\device\core\USBDDriverCb_If #
+#                    SettingChanged.c                                         #
+#    Command line =  L:\USB_AUDIO_JII\at91lib\usb\device\core\USBDDriverCb_If #
+#                    SettingChanged.c -D at91sam7s256 -D flash -D             #
+#                    TRACE_LEVEL=3 -lC L:\USB_AUDIO_JII\at91sam7s-ek\ewp\at91 #
+#                    sam7s256_flash\List\ --remarks --diag_suppress           #
+#                    Pe826,Pe1375 -o L:\USB_AUDIO_JII\at91sam7s-ek\ewp\at91sa #
+#                    m7s256_flash\Obj\ --debug --endian=little                #
+#                    --cpu=ARM7TDMI -e --fpu=None --dlib_config "D:\Program   #
+#                    Files\IAR Systems\Embedded Workbench                     #
+#                    5.4ARM\arm\INC\DLib_Config_Full.h" -I                    #
+#                    L:\USB_AUDIO_JII\at91sam7s-ek\ewp\..\..\at91lib/peripher #
+#                    als\ -I L:\USB_AUDIO_JII\at91sam7s-ek\ewp\..\..\at91lib/ #
+#                    components\ -I L:\USB_AUDIO_JII\at91sam7s-ek\ewp\..\..\a #
+#                    t91lib/usb/device\ -I L:\USB_AUDIO_JII\at91sam7s-ek\ewp\ #
+#                    ..\..\at91lib\ -I L:\USB_AUDIO_JII\at91sam7s-ek\ewp\..\. #
+#                    .\at91lib/boards/at91sam7s-ek\ -I                        #
+#                    L:\USB_AUDIO_JII\at91sam7s-ek\ewp\..\..\app\ -I          #
+#                    "D:\Program Files\IAR Systems\Embedded Workbench         #
+#                    5.4ARM\arm\INC\" --interwork --cpu_mode arm -Ohz         #
+#    List file    =  L:\USB_AUDIO_JII\at91sam7s-ek\ewp\at91sam7s256_flash\Lis #
+#                    t\USBDDriverCb_IfSettingChanged.lst                      #
+#    Object file  =  L:\USB_AUDIO_JII\at91sam7s-ek\ewp\at91sam7s256_flash\Obj #
+#                    \USBDDriverCb_IfSettingChanged.o                         #
+#                                                                             #
+#                                                                             #
+###############################################################################
+
+L:\USB_AUDIO_JII\at91lib\usb\device\core\USBDDriverCb_IfSettingChanged.c
+      1          /* ----------------------------------------------------------------------------
+      2           *         ATMEL Microcontroller Software Support 
+      3           * ----------------------------------------------------------------------------
+      4           * Copyright (c) 2008, Atmel Corporation
+      5           *
+      6           * All rights reserved.
+      7           *
+      8           * Redistribution and use in source and binary forms, with or without
+      9           * modification, are permitted provided that the following conditions are met:
+     10           *
+     11           * - Redistributions of source code must retain the above copyright notice,
+     12           * this list of conditions and the disclaimer below.
+     13           *
+     14           * Atmel's name may not be used to endorse or promote products derived from
+     15           * this software without specific prior written permission.
+     16           *
+     17           * DISCLAIMER: THIS SOFTWARE IS PROVIDED BY ATMEL "AS IS" AND ANY EXPRESS OR
+     18           * IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+     19           * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT ARE
+     20           * DISCLAIMED. IN NO EVENT SHALL ATMEL BE LIABLE FOR ANY DIRECT, INDIRECT,
+     21           * INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+     22           * LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA,
+     23           * OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+     24           * LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+     25           * NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE,
+     26           * EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+     27           * ----------------------------------------------------------------------------
+     28           */
+     29          
+     30          //------------------------------------------------------------------------------
+     31          //         Headers
+     32          //------------------------------------------------------------------------------
+     33          
+     34          #include "USBDDriverCallbacks.h"
+     35          #include <utility/trace.h>
+     36          
+     37          //------------------------------------------------------------------------------
+     38          //         Global functions
+     39          //------------------------------------------------------------------------------
+     40          
+     41          //------------------------------------------------------------------------------
+     42          /// Notifies of a change in the currently active setting of an interface.
+     43          /// \param interface  Number of the interface whose setting has changed.
+     44          /// \param setting  New interface setting.
+     45          //------------------------------------------------------------------------------
+
+   \                                 In section .text, align 4, keep-with-next
+     46          void USBDDriverCallbacks_InterfaceSettingChanged(
+     47              unsigned char interface,
+     48              unsigned char setting)
+     49          {
+     50              TRACE_INFO_WP("InterfaceSettingChanged ");
+     51          }
+   \                     USBDDriverCallbacks_InterfaceSettingChanged:
+   \   00000000   1EFF2FE1           BX       LR               ;; return
+     52          
+
+   Maximum stack usage in bytes:
+
+     Function                       .cstack
+     --------                       -------
+     USBDDriverCallbacks_InterfaceSettingChanged
+                                         0
+
+
+   Section sizes:
+
+     Function/Label                 Bytes
+     --------------                 -----
+     USBDDriverCallbacks_InterfaceSettingChanged
+                                       4
+
+ 
+ 4 bytes in section .text
+ 
+ 4 bytes of CODE memory
+
+Errors: none
+Warnings: none
